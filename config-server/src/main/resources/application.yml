@@ -1,4 +1,6 @@
 spring:
+  freemarker:
+    prefer-file-system-access: false
   application:
     name:
       config-server

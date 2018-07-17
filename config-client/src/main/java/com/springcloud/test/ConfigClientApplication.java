@@ -28,10 +28,12 @@ public class ConfigClientApplication {
     @Value("${foo}")
     private String foo;
 
+    @Value("${name}")
+    private String name;
 
     @RequestMapping("/hi")
     public String hi() {
-        return foo;
+        return foo + ", " + name;
     }
 
 
