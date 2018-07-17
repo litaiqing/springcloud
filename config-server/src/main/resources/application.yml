@@ -1,0 +1,15 @@
+spring:
+  application:
+    name:
+      config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/litaiqing/springcloud
+          search-paths: respo
+          
+
+server:
+  port: 8888
