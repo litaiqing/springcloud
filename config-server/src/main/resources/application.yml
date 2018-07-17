@@ -9,7 +9,9 @@ spring:
         git:
           uri: https://github.com/litaiqing/springcloud
           search-paths: respo
-          
-
+eureka:
+  client:
+    healthcheck:
+      enabled: true
 server:
   port: 8888
